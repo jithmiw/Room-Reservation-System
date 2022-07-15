@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="context" prefHeight="800.0" prefWidth="1200.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.DashBoard2FormController">
+    <children>
+        <ImageView fitHeight="800.0" fitWidth="1200.0" pickOnBounds="true">
+            <image>
+                <Image url="@../img/background.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/logo.png"/>
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="36.0" layoutX="199.0" stroke="BLACK"
+                   strokeType="INSIDE" strokeWidth="0.5" width="99.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="36.0" layoutX="297.0" stroke="BLACK"
+                   strokeType="INSIDE" strokeWidth="0.5" width="99.0"/>
+        <Text layoutX="222.0" layoutY="25.0" onMouseClicked="#txtRoomsOnAction" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="ROOMS">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Text>
+        <Text layoutX="322.0" layoutY="25.0" onMouseClicked="#txtMenusOnAction" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="MENUS">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="36.0" layoutX="395.0" stroke="BLACK"
+                   strokeType="INSIDE" strokeWidth="0.5" width="109.0"/>
+        <Text layoutX="416.0" layoutY="25.0" onMouseClicked="#txtContactOnAction" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="CONTACT">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Text>
+        <Text fill="#7a5324" layoutX="548.0" layoutY="279.0" onMouseClicked="#checkInOnAction" strokeType="OUTSIDE"
+              strokeWidth="0.0" text="Check In">
+            <font>
+                <Font name="Book Antiqua Bold" size="25.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Text>
+        <Text fill="#7a5324" layoutX="538.0" layoutY="341.0" onMouseClicked="#checkOutOnAction" strokeType="OUTSIDE"
+              strokeWidth="0.0" text="Check Out">
+            <font>
+                <Font name="Book Antiqua Bold" size="25.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Text>
+        <Text fill="#7a5324" layoutX="509.0" layoutY="407.0" onMouseClicked="#cancelBookingOnAction"
+              strokeType="OUTSIDE" strokeWidth="0.0" text="Cancel Booking">
+            <font>
+                <Font name="Book Antiqua Bold" size="25.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Text>
+        <ImageView blendMode="DARKEN" fitHeight="40.0" fitWidth="40.0" layoutX="958.0" layoutY="8.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../img/account_circle_black_24dp.jpg"/>
+            </image>
+        </ImageView>
+        <Text fill="#7a5324" layoutX="1018.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank : "/>
+        <Text fill="#7a5324" layoutX="1062.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receptionist">
+            <font>
+                <Font name="Cambria Math" size="15.0"/>
+            </font>
+        </Text>
+        <Text layoutX="1018.0" layoutY="65.0" onMouseClicked="#logOutOnAction" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Log Out" underline="true">
+            <font>
+                <Font name="Cambria Math" size="17.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bf0a35" height="36.0" layoutX="503.0" stroke="BLACK"
+                   strokeType="INSIDE" strokeWidth="0.5" width="157.0"/>
+        <Text fill="WHITE" layoutX="519.0" layoutY="24.0" onMouseClicked="#checkAvailabilityOnAction"
+              strokeType="OUTSIDE" strokeWidth="0.0" text="Check Availability">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Text>
+        <Text fill="#7a5324" layoutX="559.0" layoutY="471.0" onMouseClicked="#roomsOnAction" strokeType="OUTSIDE"
+              strokeWidth="0.0" text="Rooms">
+            <font>
+                <Font name="Book Antiqua Bold" size="25.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Text>
+        <Text fill="#7a5324" layoutX="559.0" layoutY="534.0" onMouseClicked="#guestsOnAction" strokeType="OUTSIDE"
+              strokeWidth="0.0" text="Guests">
+            <font>
+                <Font name="Book Antiqua Bold" size="25.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Text>
+    </children>
+</AnchorPane>

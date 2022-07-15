@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="context" prefHeight="800.0" prefWidth="1200.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.RoomDetailsFormController">
+    <children>
+        <ImageView cache="true" fitHeight="800.0" fitWidth="1200.0" opacity="0.55" pickOnBounds="true">
+            <image>
+                <Image url="@../img/room.png"/>
+            </image>
+        </ImageView>
+        <Text fill="#7a5324" layoutX="548.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROOMS">
+            <font>
+                <Font name="Book Antiqua Bold" size="26.0"/>
+            </font>
+        </Text>
+        <ImageView blendMode="DARKEN" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0"
+                   onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/arrow_back_black_24dp.jpg"/>
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff99" height="340.0" layoutX="22.0" layoutY="88.0"
+                   stroke="#7a5324" strokeType="INSIDE" width="570.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff99" height="340.0" layoutX="607.0" layoutY="88.0"
+                   stroke="#7a5324" strokeType="INSIDE" width="570.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff99" height="340.0" layoutX="22.0" layoutY="445.0"
+                   stroke="#7a5324" strokeType="INSIDE" width="570.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff99" height="340.0" layoutX="607.0" layoutY="445.0"
+                   stroke="#7a5324" strokeType="INSIDE" width="570.0"/>
+        <Text fill="#7a5324" layoutX="241.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SINGLE ROOM">
+            <font>
+                <Font name="Lucida Fax Demibold" size="18.0"/>
+            </font>
+        </Text>
+        <Text fill="#7a5324" layoutX="821.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOUBLE ROOM">
+            <font>
+                <Font name="Lucida Fax Demibold" size="18.0"/>
+            </font>
+        </Text>
+        <Text fill="#7a5324" layoutX="241.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRIPLE ROOM">
+            <font>
+                <Font name="Lucida Fax Demibold" size="18.0"/>
+            </font>
+        </Text>
+        <Text fill="#7a5324" layoutX="826.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SQUAD ROOM">
+            <font>
+                <Font name="Lucida Fax Demibold" size="18.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room surface area : ">
+            <font>
+                <Font name="Lucida Fax Demibold" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bed options            : ">
+            <font>
+                <Font name="Lucida Fax Demibold" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room facilities       :">
+            <font>
+                <Font name="Lucida Fax Demibold" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="220.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17 m²">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="220.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="1 single bed (105 cm * 190 cm)">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="220.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Pool or mountain views, terrace, telephone, flat screen TV with satellite channels, free safe, air conditioned, desk, parquet floor, wardrobe, mini fridge , hairdryer, free toiletries, gel / shampoo dispenser and bathtub."
+              wrappingWidth="358.3046875">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="628.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room surface area : ">
+            <font>
+                <Font name="Lucida Fax Demibold" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="628.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bed options            : ">
+            <font>
+                <Font name="Lucida Fax Demibold" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="628.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room facilities       :">
+            <font>
+                <Font name="Lucida Fax Demibold" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room facilities       :">
+            <font>
+                <Font name="Lucida Fax Demibold" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="628.0" layoutY="620.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room facilities       :">
+            <font>
+                <Font name="Lucida Fax Demibold" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room surface area : ">
+            <font>
+                <Font name="Lucida Fax Demibold" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="628.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room surface area : ">
+            <font>
+                <Font name="Lucida Fax Demibold" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="560.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bed options            : ">
+            <font>
+                <Font name="Lucida Fax Demibold" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="628.0" layoutY="560.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bed options            : ">
+            <font>
+                <Font name="Lucida Fax Demibold" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="809.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14-17 m²">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="809.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="2 single beds (105 cm * 190 cm) or 1 extra-large double bed (210 cm * 190 cm)"
+              wrappingWidth="358.3046875">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="809.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Furnished balcony overlooking the pool or the street, telephone, flat screen TV with satellite channels, air conditioned, desk, tiled floor, wardrobe with safe for rent, mini fridge. Hairdryer, free toiletries, gel / shampoo dispenser and a bath or shower."
+              wrappingWidth="358.3046875">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="220.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="22 m²">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="220.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="3 single beds (90 cm * 190 cm) or 1 single bed (90 cm * 190 cm) + 1 extra-large double bed (180 cm * 190 cm)"
+              wrappingWidth="358.3046875">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="220.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Furnished balcony overlooking the street, telephone, flat screen TV with satellite channels, air conditioned, desk, tiled /marble floor, wardrobe with safe for rent, mini fridge. Hairdryer, free toiletries, gel / shampoo dispenser and a bath or shower."
+              wrappingWidth="358.3046875">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="809.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="22 m²">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="809.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="2 double queen size beds (135 cm * 190 cm)" wrappingWidth="245.3046875">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="809.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Furnished balcony with garden pool views, telephone, flat screen TV with satellite channels, air conditioned, desk, parquet floor, wardrobe with free safe, mini fridge, kettle. Hair dryer, welcome toiletries, gel / shampoo dispenser and bathtub or shower."
+              wrappingWidth="348.3046875">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b2b1b180" height="38.0" layoutX="97.0" layoutY="40.0"
+                   stroke="#78512400" strokeType="INSIDE" width="132.0"/>
+        <Text fill="#7a5324" layoutX="121.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROOMS : 25">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d1bcba94" height="64.0" layoutX="886.0" layoutY="13.0"
+                   stroke="#78512400" strokeType="INSIDE" width="291.0"/>
+        <Text layoutX="900.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For A Night - ">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </Text>
+        <Text layoutX="900.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For A Day    - ">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </Text>
+        <Text layoutX="1009.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHECK OUT : 09:00AM"/>
+        <Text layoutX="1009.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHECK OUT : 11:00AM "/>
+    </children>
+</AnchorPane>

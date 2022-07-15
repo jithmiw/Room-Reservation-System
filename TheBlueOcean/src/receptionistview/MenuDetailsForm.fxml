@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="context" prefHeight="800.0" prefWidth="1200.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.MenuDetailsFormController">
+    <children>
+        <ImageView cache="true" fitHeight="800.0" fitWidth="1200.0" opacity="0.55" pickOnBounds="true">
+            <image>
+                <Image url="@../img/food.png"/>
+            </image>
+        </ImageView>
+        <Text layoutX="550.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENUS">
+            <font>
+                <Font name="Book Antiqua Bold" size="26.0"/>
+            </font>
+        </Text>
+        <ImageView blendMode="DARKEN" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0"
+                   onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/arrow_back_black_24dp.jpg"/>
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff99" height="340.0" layoutX="22.0" layoutY="88.0"
+                   stroke="#7a5324" strokeType="INSIDE" width="570.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff99" height="340.0" layoutX="607.0" layoutY="88.0"
+                   stroke="#7a5324" strokeType="INSIDE" width="570.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff99" height="340.0" layoutX="315.0" layoutY="445.0"
+                   stroke="#7a5324" strokeType="INSIDE" width="570.0"/>
+        <Text fill="#7a5324" layoutX="249.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SRI LANKAN">
+            <font>
+                <Font name="Lucida Fax Demibold" size="18.0"/>
+            </font>
+        </Text>
+        <Text fill="#7a5324" layoutX="851.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHINESE">
+            <font>
+                <Font name="Lucida Fax Demibold" size="18.0"/>
+            </font>
+        </Text>
+        <Text fill="#7a5324" layoutX="562.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FRENCH">
+            <font>
+                <Font name="Lucida Fax Demibold" size="18.0"/>
+            </font>
+        </Text>
+        <Text layoutX="41.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Yellow Rice Set Meal                                                          Rs.2,000"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="41.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Sri Lankan Noodle Family Meal                                         Rs.2,100"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Sri Lankan Godamba Roti Meal                                          Rs.2,000"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="String Hopper Kottu Meal                                                  Rs.2,200"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Pittu Meal                                                                           Rs.2,000"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Vegetable Fried Rice                                                           Rs.8,10"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Gamey Rahata (Weekends only)                                         Rs.1,400"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Seafood Fried Noodle                                                         Rs.1,200"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="625.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Deep Fried Vegetable Spring Rolls                                    Rs.5,00"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="625.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Steamed Dumplings (Chicken)                                          Rs.8,00"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="625.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Steamed Dumplings (Pork)                                                Rs.8,00"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="625.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Steamed Dumplings (Seafood)                                           Rs.8,00"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="625.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Sweet Corn and Chicken Soup                                           Rs.8,00"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="625.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Clear Vegetable Soup                                                         Rs.5,00"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="626.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Hot and Sour Prawn Soup                                                  Rs.8,00"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="626.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Prawn Balls                                                                        Rs.1,000"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="334.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Traditional French Onion Soup with Gruyère Cheese       Rs.1,000" wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="334.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Seafood Chowder                                                              Rs.1,100"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="334.0" layoutY="585.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Grilled Tuna Salad                                                             Rs.1,100"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="334.0" layoutY="615.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="BBQ Pork Ribs                                                                    Rs.1,600"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="334.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Seafood Pie                                                                        Rs.1,500"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+        <Text layoutX="334.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Baked Crab                                                                        Rs.1,200"
+              wrappingWidth="532.8125">
+            <font>
+                <Font name="Lucida Fax Regular" size="16.0"/>
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

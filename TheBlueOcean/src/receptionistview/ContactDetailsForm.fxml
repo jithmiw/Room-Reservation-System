@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="context" prefHeight="800.0" prefWidth="1200.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.ContactDetailsForm">
+    <children>
+        <ImageView fitHeight="800.0" fitWidth="1200.0" pickOnBounds="true">
+            <image>
+                <Image url="@../img/background.jpg"/>
+            </image>
+        </ImageView>
+        <Text fill="#b18757" layoutX="532.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACT">
+            <font>
+                <Font name="Book Antiqua Bold" size="26.0"/>
+            </font>
+        </Text>
+        <ImageView blendMode="DARKEN" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0"
+                   onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/arrow_back_black_24dp.jpg"/>
+            </image>
+        </ImageView>
+        <Text fill="#7a5324" layoutX="287.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Get in touch via phone or email to make your reservation today! ">
+            <font>
+                <Font name="Lucida Fax Regular" size="19.0"/>
+            </font>
+        </Text>
+        <Text fill="#7a5324" layoutX="176.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Stay connected with us to find out the latest buzz and special offers at The Blue Ocean.">
+            <font>
+                <Font name="Lucida Fax Regular" size="19.0"/>
+            </font>
+        </Text>
+        <Text fill="#7a5324" layoutX="495.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Tel : +94 112 462 521">
+            <font>
+                <Font name="Lucida Fax Regular" size="19.0"/>
+            </font>
+        </Text>
+        <Text fill="#7a5324" layoutX="371.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Email : Inquiries - info@theblueoceanhotel.com" wrappingWidth="457.833984375">
+            <font>
+                <Font name="Lucida Fax Regular" size="19.0"/>
+            </font>
+        </Text>
+        <Text fill="#7a5324" layoutX="442.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Reservations - reservations@theblueoceanhotel.com" wrappingWidth="504.833984375">
+            <font>
+                <Font name="Lucida Fax Regular" size="19.0"/>
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

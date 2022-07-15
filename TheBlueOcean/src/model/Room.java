@@ -1,0 +1,84 @@
+package model;
+
+public class Room {
+    private int roomNo;
+    private String roomType;
+    private Double priceForNight;
+    private Double priceForDay;
+    private String isEmpty;
+
+    public Room() {
+    }
+
+    public Room(int roomNo, String roomType, String isEmpty) {
+        this.roomNo = roomNo;
+        this.roomType = roomType;
+        this.isEmpty = isEmpty;
+    }
+
+    public Room(int roomNo, String roomType, Double priceForNight, Double priceForDay, String isEmpty) {
+        this.roomNo = roomNo;
+        this.roomType = roomType;
+        this.priceForNight = priceForNight;
+        this.priceForDay = priceForDay;
+        this.isEmpty = isEmpty;
+    }
+
+    public Room(int roomNo, String roomType, Double priceForNight, Double priceForDay) {
+        this.roomNo = roomNo;
+        this.roomType = roomType;
+        this.priceForNight = priceForNight;
+        this.priceForDay = priceForDay;
+    }
+
+    public int getRoomNo() {
+        return roomNo;
+    }
+
+    public void setRoomNo(int roomNo) {
+        this.roomNo = roomNo;
+    }
+
+    public String getRoomType() {
+        return roomType;
+    }
+
+    public void setRoomType(String roomType) {
+        this.roomType = roomType;
+    }
+
+    public Double getPriceForNight() {
+        return priceForNight;
+    }
+
+    public void setPriceForNight(Double priceForNight) {
+        this.priceForNight = priceForNight;
+    }
+
+    public Double getPriceForDay() {
+        return priceForDay;
+    }
+
+    public void setPriceForDay(Double priceForDay) {
+        this.priceForDay = priceForDay;
+    }
+
+    public String getIsEmpty() {
+        return isEmpty;
+    }
+
+    public void setIsEmpty(String isEmpty) {
+        this.isEmpty = isEmpty;
+    }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "roomNo=" + roomNo +
+                ", roomType='" + roomType + '\'' +
+                ", priceForNight=" + priceForNight +
+                ", priceForDay=" + priceForDay +
+                ", isEmpty='" + isEmpty + '\'' +
+                '}';
+    }
+}

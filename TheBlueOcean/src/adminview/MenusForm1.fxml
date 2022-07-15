@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="context" prefHeight="800.0" prefWidth="1200.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.MenusForm1Controller">
+    <children>
+        <ImageView cache="true" fitHeight="800.0" fitWidth="1200.0" opacity="0.4" pickOnBounds="true">
+            <image>
+                <Image url="@../img/food.png"/>
+            </image>
+        </ImageView>
+        <Text layoutX="559.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menus">
+            <font>
+                <Font name="Book Antiqua Bold" size="26.0"/>
+            </font>
+        </Text>
+        <ImageView blendMode="DARKEN" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0"
+                   onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/arrow_back_black_24dp.jpg"/>
+            </image>
+        </ImageView>
+        <TableView fx:id="mealTMTable" fixedCellSize="0.0" layoutX="14.0" layoutY="94.0" opacity="0.8"
+                   prefHeight="688.0" prefWidth="809.0" style="-fx-border-color: #7A5324;">
+            <columns>
+                <TableColumn fx:id="colMealName" prefWidth="355.0" style="-fx-border-color: #7A5324;" text="Meal Name"/>
+                <TableColumn fx:id="colMealType" prefWidth="141.0" style="-fx-border-color: #7A5324;" text="Meal Type"/>
+                <TableColumn fx:id="colPrice" minWidth="0.0" prefWidth="123.0"
+                             style="-fx-border-color: #7A5324; -fx-alignment: CENTER-RIGHT;" text="Price (LKR)"/>
+                <TableColumn fx:id="colAction" minWidth="0.0" prefWidth="186.0"
+                             style="-fx-background-color: #D3C1AD; -fx-border-color: #7A5324; -fx-alignment: CENTER;"
+                             text="Action"/>
+            </columns>
+        </TableView>
+        <JFXTextField fx:id="txtMealName" focusColor="BLACK" labelFloat="true" layoutX="859.0" layoutY="123.0"
+                      prefHeight="28.0" prefWidth="312.0" promptText="Meal Name" style="-fx-prompt-text-fill: #000000;"
+                      unFocusColor="BLACK">
+            <font>
+                <Font name="Lucida Fax Demibold" size="14.0"/>
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtMealType" focusColor="BLACK" labelFloat="true" layoutX="859.0" layoutY="201.0"
+                      prefHeight="28.0" prefWidth="312.0" promptText="Meal Type" style="-fx-prompt-text-fill: #000000;"
+                      unFocusColor="BLACK">
+            <font>
+                <Font name="Lucida Fax Demibold" size="14.0"/>
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtPrice" focusColor="BLACK" labelFloat="true" layoutX="859.0" layoutY="279.0"
+                      prefHeight="28.0" prefWidth="312.0" promptText="Price (LKR)"
+                      style="-fx-prompt-text-fill: #000000;" unFocusColor="BLACK">
+            <font>
+                <Font name="Lucida Fax Demibold" size="14.0"/>
+            </font>
+        </JFXTextField>
+        <JFXButton buttonType="RAISED" layoutX="859.0" layoutY="393.0" onAction="#btnAddNewMealOnAction"
+                   prefHeight="35.0" prefWidth="312.0" style="-fx-background-color: #94744F;" text="Add New Meal"
+                   textFill="WHITE">
+            <font>
+                <Font name="Lucida Fax Regular" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="859.0" layoutY="471.0" onAction="#btnModifyMealOnAction"
+                   prefHeight="35.0" prefWidth="312.0" style="-fx-background-color: #94744F;" text="Modify Meal"
+                   textFill="WHITE">
+            <font>
+                <Font name="Lucida Fax Regular" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+    </children>
+</AnchorPane>

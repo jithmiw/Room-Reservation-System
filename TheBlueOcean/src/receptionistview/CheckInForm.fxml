@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="context" prefHeight="800.0" prefWidth="1200.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.CheckInFormController">
+    <children>
+        <ImageView fitHeight="800.0" fitWidth="1200.0" pickOnBounds="true">
+            <image>
+                <Image url="@../img/background.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView blendMode="DARKEN" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0"
+                   onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/arrow_back_black_24dp.jpg"/>
+            </image>
+        </ImageView>
+        <TableView fx:id="guestTMTable" fixedCellSize="0.0" layoutX="13.0" layoutY="360.0" opacity="0.9"
+                   prefHeight="428.0" prefWidth="1175.0" style="-fx-border-color: #7A5324;">
+            <columns>
+                <TableColumn fx:id="colRoomNo" prefWidth="78.0"
+                             style="-fx-border-color: #7A5324; -fx-alignment: CENTER;" text="Room No"/>
+                <TableColumn fx:id="colRoomType" prefWidth="90.0" style="-fx-border-color: #7A5324;" text="Room Type"/>
+                <TableColumn fx:id="colName" prefWidth="154.0" style="-fx-border-color: #7A5324;" text="Name"/>
+                <TableColumn fx:id="colNICNo" prefWidth="115.0" style="-fx-border-color: #7A5324;" text="NIC No"/>
+                <TableColumn fx:id="colPhoneNo" minWidth="0.0" prefWidth="116.0" style="-fx-border-color: #7A5324;"
+                             text="Phone No"/>
+                <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="155.0" style="-fx-border-color: #7A5324;"
+                             text="Email"/>
+                <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="135.0" style="-fx-border-color: #7A5324;"
+                             text="Address"/>
+                <TableColumn fx:id="colCheckInDate" minWidth="0.0" prefWidth="135.0" style="-fx-border-color: #7A5324;"
+                             text="Check In Date"/>
+                <TableColumn fx:id="colCheckOutDate" minWidth="0.0" prefWidth="135.0" style="-fx-border-color: #7A5324;"
+                             text="Check Out Date"/>
+                <TableColumn fx:id="colFees" minWidth="0.0" prefWidth="92.0"
+                             style="-fx-border-color: #7A5324; -fx-alignment: CENTER-RIGHT;" text="Fees (LKR)"/>
+                <TableColumn fx:id="colAction" minWidth="0.0" prefWidth="140.0"
+                             style="-fx-border-color: #7A5324; -fx-background-color: #D3C1AD; -fx-alignment: CENTER;"
+                             text="Action"/>
+            </columns>
+        </TableView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff45" height="296.0" layoutX="13.0" layoutY="58.0"
+                   stroke="#90714b" strokeType="INSIDE" width="1175.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8e6e4a29" height="273.0" layoutX="24.0" layoutY="69.0"
+                   stroke="#90714b" strokeType="INSIDE" width="383.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c6c4a29" height="273.0" layoutX="417.0" layoutY="69.0"
+                   stroke="#90714b" strokeType="INSIDE" width="510.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8c6c4a29" height="273.0" layoutX="935.0" layoutY="69.0"
+                   stroke="#90714b" strokeType="INSIDE" width="243.0"/>
+        <JFXButton buttonType="RAISED" layoutX="935.0" layoutY="16.0" onAction="#btnModifyOnAction" prefHeight="29.0"
+                   prefWidth="125.0" style="-fx-background-color: #90704A;" text="Modify Guest" textFill="WHITE">
+            <font>
+                <Font name="Lucida Bright" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="1078.0" layoutY="16.0" onAction="#btnCheckInOnAction" prefHeight="29.0"
+                   prefWidth="108.0" style="-fx-background-color: #90704A;" text="Check In" textFill="WHITE">
+            <font>
+                <Font name="Lucida Bright" size="15.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <Text fill="#7a5324" layoutX="148.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Info">
+            <font>
+                <Font name="Book Antiqua" size="23.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+            <font>
+                <Font name="Lucida Fax Regular" size="15.0"/>
+            </font>
+        </Text>
+        <Text layoutX="40.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC No">
+            <font>
+                <Font name="Lucida Fax Regular" size="15.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="txtName" layoutX="141.0" layoutY="127.0" prefHeight="31.0" prefWidth="249.0"/>
+        <TextField fx:id="txtNICNo" layoutX="141.0" layoutY="170.0" prefHeight="31.0" prefWidth="249.0"/>
+        <Text layoutX="40.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone No">
+            <font>
+                <Font name="Lucida Fax Regular" size="15.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="txtPhoneNo" layoutX="141.0" layoutY="213.0" prefHeight="31.0" prefWidth="249.0"/>
+        <Text layoutX="40.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+            <font>
+                <Font name="Lucida Fax Regular" size="15.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="txtEmail" layoutX="141.0" layoutY="256.0" prefHeight="31.0" prefWidth="249.0"/>
+        <Text layoutX="40.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+            <font>
+                <Font name="Lucida Fax Regular" size="15.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="txtAddress" layoutX="141.0" layoutY="299.0" prefHeight="31.0" prefWidth="249.0"/>
+        <Text fill="#7a5324" layoutX="621.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Info">
+            <font>
+                <Font name="Book Antiqua" size="23.0"/>
+            </font>
+        </Text>
+        <Text layoutX="432.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room No">
+            <font>
+                <Font name="Lucida Fax Regular" size="15.0"/>
+            </font>
+        </Text>
+        <Text layoutX="432.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fees (LKR)">
+            <font>
+                <Font name="Lucida Fax Regular" size="15.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="txtFees" layoutX="583.0" layoutY="299.0" prefHeight="31.0" prefWidth="326.0"/>
+        <TextField fx:id="txtRoomNo" layoutX="583.0" layoutY="127.0" prefHeight="31.0" prefWidth="326.0"/>
+        <Text layoutX="432.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type">
+            <font>
+                <Font name="Lucida Fax Regular" size="15.0"/>
+            </font>
+        </Text>
+        <Text layoutX="432.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check In Date">
+            <font>
+                <Font name="Lucida Fax Regular" size="15.0"/>
+            </font>
+        </Text>
+        <Text layoutX="432.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Out Date">
+            <font>
+                <Font name="Lucida Fax Regular" size="15.0"/>
+            </font>
+        </Text>
+        <RadioButton fx:id="rdBtnSingle" layoutX="583.0" layoutY="175.0" mnemonicParsing="false" selected="true"
+                     text="Single">
+            <font>
+                <Font name="Lucida Bright" size="15.0"/>
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="roomType"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="rdBtnDouble" layoutX="667.0" layoutY="176.0" mnemonicParsing="false" text="Double"
+                     toggleGroup="$roomType">
+            <font>
+                <Font name="Lucida Bright" size="15.0"/>
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="rdBtnTriple" layoutX="755.0" layoutY="174.0" mnemonicParsing="false" text="Triple"
+                     toggleGroup="$roomType">
+            <font>
+                <Font name="Lucida Bright" size="15.0"/>
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="rdBtnSqaud" layoutX="837.0" layoutY="175.0" mnemonicParsing="false" text="Squad"
+                     toggleGroup="$roomType">
+            <font>
+                <Font name="Lucida Bright" size="15.0"/>
+            </font>
+        </RadioButton>
+        <JFXDatePicker fx:id="dtCheckInDate" defaultColor="BLACK" layoutX="583.0" layoutY="212.0" prefHeight="31.0"
+                       prefWidth="326.0" style="-fx-background-color: #ffffff;"/>
+        <JFXDatePicker fx:id="dtCheckOutDate" defaultColor="BLACK" layoutX="583.0" layoutY="255.0" prefHeight="31.0"
+                       prefWidth="326.0" style="-fx-background-color: #ffffff;"/>
+        <Text fill="#7a5324" layoutX="983.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Meal Plan Info">
+            <font>
+                <Font name="Book Antiqua" size="23.0"/>
+            </font>
+        </Text>
+        <RadioButton fx:id="rdBtnEuropean" layoutX="954.0" layoutY="133.0" mnemonicParsing="false" selected="true"
+                     text="European Plan" textFill="#513718">
+            <font>
+                <Font name="Lucida Bright" size="15.0"/>
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="mealPlan"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="rdBtnContinental" layoutX="954.0" layoutY="176.0" mnemonicParsing="false"
+                     text="Continental Plan" textFill="#513718" toggleGroup="$mealPlan">
+            <font>
+                <Font name="Lucida Bright" size="15.0"/>
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="rdBtnAmerican" layoutX="954.0" layoutY="219.0" mnemonicParsing="false" text="American Plan"
+                     textFill="#513718" toggleGroup="$mealPlan">
+            <font>
+                <Font name="Lucida Bright" size="15.0"/>
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="rdBtnModifiedAmerican" layoutX="954.0" layoutY="262.0" mnemonicParsing="false"
+                     text="Modified American Plan" textFill="#513718" toggleGroup="$mealPlan">
+            <font>
+                <Font name="Lucida Bright" size="15.0"/>
+            </font>
+        </RadioButton>
+    </children>
+</AnchorPane>

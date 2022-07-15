@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="context" prefHeight="800.0" prefWidth="1200.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.IncomeReportFormController">
+    <children>
+        <ImageView fitHeight="800.0" fitWidth="1200.0" pickOnBounds="true">
+            <image>
+                <Image url="@../img/background.jpg"/>
+            </image>
+        </ImageView>
+        <Text fill="#7a5324" layoutX="512.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income Report">
+            <font>
+                <Font name="Book Antiqua Bold" size="26.0"/>
+            </font>
+        </Text>
+        <ImageView blendMode="DARKEN" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0"
+                   onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/arrow_back_black_24dp.jpg"/>
+            </image>
+        </ImageView>
+        <Text fill="#2c2d2e" layoutX="319.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Earning Of This Month     :">
+            <font>
+                <Font name="Lucida Fax Demibold" size="20.0"/>
+            </font>
+        </Text>
+        <Text fill="#2c2d2e" layoutX="319.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Earning Of This  Year       :">
+            <font>
+                <Font name="Lucida Fax Demibold" size="20.0"/>
+            </font>
+        </Text>
+        <Text fx:id="txtMIncome" layoutX="633.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Earning Of This Month">
+            <font>
+                <Font name="Lucida Fax Demibold" size="19.0"/>
+            </font>
+        </Text>
+        <Text fx:id="txtYIncome" layoutX="633.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Earning Of This  Year">
+            <font>
+                <Font name="Lucida Fax Demibold" size="19.0"/>
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
